@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', 'sans-serif-condensed';
+}
+
+.App {
+  min-height: 100vh; 
+  position: relative;
+  background-color: #f7dbd5e6;
+  display: center;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+
+}
+
+.camera {
+  position: relative;
+}
+
+.result {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f7dbd5e6;
+  transition: 0.4s;
+}
+
+.result.hasPhoto {
+  left: 0;
+
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.buttonStart{
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  margin: 50px;
+
+  appearance: none;
+  border: none;
+  outline: none;
+
+  padding: 8px 16px;
+  background-image: linear-gradient(to right, #31c4f0 50%, #f682f6 50%);
+  background-size: 200%;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+
+button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  appearance: none;
+  border: none;
+  outline: none;
+
+  padding: 8px 16px;
+  background-image: linear-gradient(to right, #31c4f0 50%, #f682f6 50%);
+  background-size: 200%;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+
+buttonmore {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  appearance: none;
+  border: none;
+  outline: none;
+
+  padding: 8px 16px;
+  background-image: linear-gradient(to right, #31c4f0 50%, #f682f6 50%);
+  background-size: 200%;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* buttonout {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  appearance: none;
+  border: none;
+  outline: none;
+
+  padding: 8px 16px;
+  background-image: linear-gradient(to right, #844FFF 50%, #FF4F84 50%);
+  background-size: 200%;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+} */
+
+button:hover {
+  background-position: 100%;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+}
+
+
+.wrapper {
+  padding: 5px 20px;
+}
+
+.wrapper2 {
+  padding: 3% 30%;
+}
+
+.wrapper fieldset {
+  margin: 20px 0;
+}
+
+p,
+label {
+    font: 1rem 'Fira Sans', 'sans-serif-condensed';
+}
+
+input {
+    margin: .4rem;
+}
